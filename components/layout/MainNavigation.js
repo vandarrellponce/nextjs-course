@@ -1,9 +1,10 @@
 import classes from './MainNavigation.module.css'
 import Link from 'next/link'
+
 const MainNavigation = () => {
   return (
     <header className={classes.header}>
-      <div className={classes.log}>Meetups</div>
+      <div className={classes.logo}>Meetups</div>
       <nav>
         <ul>
           <li>
