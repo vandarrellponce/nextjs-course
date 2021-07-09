@@ -14,7 +14,7 @@ const DUMMY_MEETUPS = [
     id: 'm2',
     title: 'A second meetup',
     image:
-      'https://www.planetware.com/wpimages/2019/10/asia-best-places-to-visit-mount-fuji-japan.jpg',
+      'https://img.traveltriangle.com/blog/wp-content/uploads/2020/02/city-skyline-of-Sydney-Australia.jpg',
     address: 'some address',
     description: 'this is the second meetup meetup',
   },
