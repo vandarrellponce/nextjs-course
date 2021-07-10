@@ -11,11 +11,30 @@ const MeetupDetails = (props) => {
   )
 }
 
+export const getStaticPaths = async () => {
+  return {
+    paths: [
+      {
+        params: {
+          meetupId: 'm1',
+        },
+      },
+      {
+        params: {
+          meetupId: 'm2',
+        },
+      },
+    ],
+    fallback: false,
+  }
+}
+
 export const getStaticProps = async (context) => {
   const meetupId = context.params.meetupId
   return {
     props: {
       meetupData: {
+        id: meetupId,
         image:
           'https://www.planetware.com/wpimages/2019/10/asia-best-places-to-visit-mount-fuji-japan.jpg',
         title: 'a title',
