@@ -15,14 +15,10 @@ export const getStaticPaths = async () => {
   return {
     paths: [
       {
-        params: {
-          meetupId: 'm1',
-        },
+        params: { meetupId: 'm1' },
       },
       {
-        params: {
-          meetupId: 'm2',
-        },
+        params: { meetupId: 'm2' },
       },
     ],
     fallback: false,
