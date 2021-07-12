@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/router'
 import NewMeetupForm from '../../components/meetups/NewMeetupForm'
+import Head from 'next/head'
 
 const NewMeetupPage = () => {
   const router = useRouter()
@@ -17,7 +18,16 @@ const NewMeetupPage = () => {
     console.log(result.message)
     router.push('/')
   }
-  return <NewMeetupForm onAddMeetup={addMeetupHandler} />
+  return (
+    <div>
+      <Head>
+        <title>VDP React Meetups - Add New Meetup</title>
+        <meta name="description" content="Browse a place to go by VDP" />
+      </Head>
+
+      <NewMeetupForm onAddMeetup={addMeetupHandler} />
+    </div>
+  )
 }
 
 export default NewMeetupPage

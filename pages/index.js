@@ -1,9 +1,18 @@
 import MeetupList from '../components/meetups/MeetupList'
+import Head from 'next/head'
 
 import { MongoClient } from 'mongodb'
 
 const HomePage = (props) => {
-  return <MeetupList meetups={props.meetups} />
+  return (
+    <div>
+      <Head>
+        <title>VDP React Meetups</title>
+        <meta name="description" content="Browse a place to go by VDP" />
+      </Head>
+      <MeetupList meetups={props.meetups} />
+    </div>
+  )
 }
 
 export const getStaticProps = async () => {
