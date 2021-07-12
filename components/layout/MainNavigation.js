@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const MainNavigation = () => {
   return (
-    <header className={classes.header}>
+    <header className={classes.header} id="navbar">
       <div className={classes.logo}>Meetups</div>
       <nav>
         <ul>

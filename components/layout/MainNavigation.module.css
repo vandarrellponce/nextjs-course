@@ -1,17 +1,21 @@
 .header {
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(51, 51, 51);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(214, 214, 214, 0.5);
   padding: 0 10%;
+
+  position: sticky;
+  top: 0;
 }
 
 .logo {
   display: flex;
   font-size: 1.5rem;
-  color: rgb(214, 214, 214);
+  color: rgb(37, 37, 37);
   align-items: center;
   justify-content: center;
 }
@@ -31,7 +35,7 @@
 .header a {
   text-decoration: none;
   font-size: 1rem;
-  color: rgb(214, 214, 214);
+  color: rgb(37, 37, 37);
 }
 
 .header a:hover,
