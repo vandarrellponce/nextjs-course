@@ -30,7 +30,7 @@ export const getStaticPaths = async () => {
           params: { meetupId: meetup._id.toString() },
         }
       }),
-      fallback: false,
+      fallback: 'blocking', // or true
     }
   } catch (error) {
     console.log(error.message)
